@@ -21,3 +21,13 @@ thal=st.number_input('Enter type of defect:(0 = normal; 1 = fixed defect; 2 = re
 op=model_nb.predict([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,,ca,thal])
 if st.button('PREDICT'):
   st.title(op[0])
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                 
