@@ -18,7 +18,7 @@ exang=st.number_input('Enter exercise induced angina:')
 oldpeak=st.number_input('Enter depression induced by exercise relative to rest:')
 ca=st.number_input('Enter number of major vessels (0-3) colored by flourosopy:')
 thal=st.number_input('Enter type of defect:(0 = normal; 1 = fixed defect; 2 = reversable defect):')
-op=model_nb.predict([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,ca,thal])
+op=model_nb.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,ca,thal]])
 if st.button('PREDICT'):
   st.title(op[0])
     
