@@ -19,11 +19,14 @@ oldpeak=st.number_input('Enter depression induced by exercise relative to rest:'
 ca=st.number_input('Enter number of major vessels (0-3) colored by flourosopy:')
 thal=st.number_input('Enter type of defect:(0 = normal; 1 = fixed defect; 2 = reversable defect):')
 op=model_nb.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,ca,thal]])
+if  op==1:
+  st.write("no heart disease")
+else:
+  st.write("you have a heart disease please consult a doctor")
+
 if st.button('PREDICT'):
-  if st.title(op[0])==1:
-    st.write("no heart disease")
-  else:
-    st.write("you have a heart disease please consult a doctor")
+ st.title(op[0])
+   
     
     
     
