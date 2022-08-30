@@ -22,11 +22,13 @@ op=model_nb.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak
 
 
 if st.button('PREDICT'):
-  if  op==1:
-    st.title("no heart disease")
-  else:
-    st.title("you have a heart disease please consult a doctor")
-   
+  if age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,ca,thal!=0:
+    if  op==1:
+      st.title("no heart disease")
+    else:
+      st.title("you have a heart disease please consult a doctor")
+   else:
+    st.title("please enter the data")
     
     
     
