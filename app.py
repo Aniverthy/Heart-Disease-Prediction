@@ -22,7 +22,7 @@ op=model_nb.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak
 
 
 if st.button('PREDICT'):
-  if age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,ca,thal!=0:
+  if age!=0,sex!=0,cp!=0,trestbps!=0,chol!=0,fbs!=0,restecg!=0,thalach!=0,exang!=0,oldpeak!=0,ca!=0,thal!=0:
     if  op==1:
       st.title("no heart disease")
     else:
