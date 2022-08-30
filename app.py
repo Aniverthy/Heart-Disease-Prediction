@@ -27,8 +27,9 @@ if st.button('PREDICT'):
       st.title("no heart disease")
     else:
       st.title("you have a heart disease please consult a doctor")
-   else:
+  else:
     st.title("please enter the data")
+    
     
     
     
